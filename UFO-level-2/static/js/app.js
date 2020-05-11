@@ -1,4 +1,3 @@
-
 // Populate table with data
 function init(inputData) {
     inputData.forEach(entry => {
@@ -12,7 +11,7 @@ function init(inputData) {
 
 init(data);
 
-// Set up filters
+// Set up filters //
 // -----------------------------------------------//
 // get unique values of an array
 function onlyUnique(value, index, self) { 
@@ -118,18 +117,9 @@ function filterTable() {
         }
     };
 
-    console.log('hello');
-    console.log(dateInputValue, countryInputValue, cityInputValue, stateInputValue, shapeInputValue);
-    // console.log(dateInputValue);
-    // console.log(cityInputValue);
-    // console.log(stateInputValue);
-    console.log(data);
-
     var filteredData = data.filter(filterDate).filter(filterCity).filter(filterState).filter(filterCountry).filter(filterShape);
     
-    console.log(filteredData);
-    init(filteredData);
-    
+    init(filteredData);  
 };
 
 
